@@ -1,2 +1,4 @@
 <!-- figlio di app-component -->
 <hero [propFiglio]="mainText"></hero> 
+<app-sidebar (output)="riceviStringaDalFiglio($event)"></app-sidebar>
+<p>La stringa che sto visualizzando è {{appString}}</p>
