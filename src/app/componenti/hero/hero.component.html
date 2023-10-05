@@ -1,0 +1,10 @@
+<!-- figlio di hero-component -->
+<h1>Hero Component</h1>
+<p>CHILD: {{propFiglio}}</p>
+<app-navbar 
+    [mainGrandChildProp] = "propFiglio"
+    (sendValue)="onEvent($event)"
+
+    >
+</app-navbar>
+<p>Il booleano è stato ricevuto? {{booleanoRicevuto}}</p>
