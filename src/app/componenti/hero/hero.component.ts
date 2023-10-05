@@ -9,9 +9,13 @@ export class HeroComponent {
   @Input() propFiglio!: string;
 
   booleanoRicevuto: boolean = false;
+  numbeRicevuto: number = 3;
 
   onEvent(event : any){
     this.booleanoRicevuto = event;
+  }
 
+  onEventNumber(event : any){
+    this.numbeRicevuto = event;
   }
 }

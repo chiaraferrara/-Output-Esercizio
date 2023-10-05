@@ -4,7 +4,8 @@
 <app-navbar 
     [mainGrandChildProp] = "propFiglio"
     (sendValue)="onEvent($event)"
-
+    (sendNumber)="onEventNumber($event)"
     >
 </app-navbar>
 <p>Il booleano è stato ricevuto? {{booleanoRicevuto}}</p>
+<p>Il numero è stato ricevuto? {{numbeRicevuto}}</p>

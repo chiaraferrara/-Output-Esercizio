@@ -16,5 +16,11 @@ export class NavbarComponent {
     this.sendValue.emit(this.value);
     console.log(this.sendValue)
   }
+// emettiamo un valore number
+  @Output() sendNumber = new EventEmitter<number>();
+  numero: number = 2;
 
+  sendNumberFunc(){
+    this.sendNumber.emit(this.numero);
+  }
 }
