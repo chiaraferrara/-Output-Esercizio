@@ -7,6 +7,7 @@ import { HeroComponent } from './componenti/hero/hero.component';
 import { NavbarComponent } from './componenti/navbar/navbar.component';
 import { NumberComponent } from './componenti/number/number.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
